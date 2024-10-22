@@ -1,0 +1,105 @@
+@media screen and (max-width: 900px){
+    header .menu-desktop, header .btn-contato{
+        display: none;
+    }
+    
+    header .btn-menu-mob{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 878px){
+    .hero-site .txt-hero h1{
+        font-size: 2.6em;
+        line-height: 45px;
+    }
+    
+
+    .hero-site .txt-hero p{
+        font-size: 18px;
+    }
+    
+    .hero-site .txt-hero p span{
+        display: inline;
+    }
+
+    section.vantagens{
+        padding: 80px 0;
+    }
+    
+
+
+
+    .vantagens .itens-container{
+
+        flex-direction: column;
+    }
+    
+    .vantagens .itens-container .img-itens img{
+        width: 100%;
+    }
+
+    .vantagens .itens-container .txt-itens p{
+        margin-bottom: 20px;
+    }
+    
+
+
+ 
+    
+    .txt-contato, .icons-contato{
+        display: block;
+        width: 100%;
+    }
+    
+    .contato .txt-contato h3{
+        font-size: 2em;
+        line-height: 40px;
+    }
+
+    .contato .txt-contato p{
+        margin-bottom: 20px;
+    }
+    
+    .contato .icons-contato button{
+        width: 100%;
+    }
+        
+    .carro h3{
+        font-size: 2.3em;
+        line-height: 40px;
+    }
+    
+    .carro p{
+        margin: 20px 0;
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    
+    .txt-funciona, .instrucoes{
+        display: block;
+        width: 100%;
+    }
+    
+    .como-funciona .txt-funciona{
+        position: static;
+    }
+    
+    .como-funciona .txt-funciona h3{
+        font-size: 3em;
+        line-height: 50px;
+    }
+    
+    .instrucoes .instru-box{
+        flex-direction: column;
+    
+        margin-bottom: 40px;
+        border: 5px solid black;
+        padding: 20px;
+    }
+    
+    .instrucoes .instru-box img{
+        max-width: 100px;
+    }    
+}

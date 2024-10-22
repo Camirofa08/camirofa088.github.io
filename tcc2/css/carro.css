@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #e3e3e3;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* estilo do header */
+
+header{
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 9999999999999999999999999;
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img{
+    max-width: 80px;
+}
+
+
+header.rolar{
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 0 15px black;
+}
+
+header.rolar .menu-desktop nav ul li a{
+    color: black;
+}
+
+header.rolar .btn-contato button{
+    border: 1px solid black;
+    color: black;
+}
+
+header.rolar .btn-contato button:hover{
+    background-color: black;
+    color: white;
+}
+
+
+header .menu-desktop nav ul{
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li{
+    display: inline-block;
+}
+
+header .menu-desktop nav ul li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+.menu-desktop nav a:hover{
+    transform: scale(1.05);
+}
+
+header .btn-contato button{
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+}
+
+header .btn-contato button:hover{
+    background-color: white;
+    color: black;
+}
+
+/* estilo do botao do menu mobile */
+
+header .btn-menu-mob{
+    display: none;
+    position: relative;
+    z-index: 99999999999999999999999999;
+}
+
+header .btn-menu-mob div{
+    background-color: white;
+    height: 3px;
+    margin: 10px 0;
+    transition: .3s;
+}
+
+header .btn-menu-mob .line-menumob-1{
+    width: 30px;
+}
+
+header .btn-menu-mob .line-menumob-2{
+    width: 20px;
+}
+
+header.rolar .btn-menu-mob div{
+    background-color: black;
+}
+
+header .btn-menu-mob .line-menumob-1.ativo1{
+    transform: rotate(45deg) translate(30%);
+    background-color: white;
+}
+
+
+header .btn-menu-mob .line-menumob-2.ativo2{
+    transform: rotate(-45deg) translate(30%);
+    width: 30px;
+    background-color: white;
+}
+
+
+/* estilo menu mobile */
+
+header .menu-mobile{
+    width: 0;
+    height: 0;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    overflow: hidden;
+    transition: .5s;
+}
+
+header .menu-mobile nav{
+    width: 100%;
+}
+
+header .menu-mobile nav ul{
+    list-style-type: none;
+}
+
+header .menu-mobile nav a{
+    font-size: 24px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 0;
+    display: block;
+    transition: .5s;
+}
+
+
+
+header .menu-mobile nav a:hover{
+    background-color: white;
+    background-color: black;
+    box-shadow: 0 0 20px white;
+}
+
+header .menu-mobile.abrir{
+    width: 100%;
+    height: 100vh;
+}
+
+body.no-overflow{
+    overflow: hidden;
+}
+
+/* estilo do hero */
+
+section.hero-site{
+    height: 98vh;
+    background-image: url(../img/Banner\ de\ oferta\ de\ venda\ de\ carro\ fotografia\ edifícios\ da\ cidade\ azul\ e\ amarelo\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-site .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.hero-site .txt-hero h1{
+    font-size: 2.5em;
+    line-height: 100px;
+    font-weight: 300;
+}
+
+.hero-site .txt-hero h1 span{
+    font-weight: 800;
+    color: black;
+}
+
+.hero-site .txt-hero p{
+    font-size: 35px;
+    font-weight: 300;
+    margin: 80px 0;
+}
+
+.hero-site .txt-hero p span{
+    display: block;
+}
+
+/* estilo das vantagens */
+
+section.vantagens{
+    padding: 80px 0;
+}
+
+.vantagens .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+
+    margin-bottom: 55px;
+    padding: 30px;
+    border: 7px solid black;
+}
+
+.vantagens .itens-container .img-itens img{
+    max-width: 480px;
+    transition: all ease-in-out 0.5s;
+    border-radius: 5%;
+}
+
+.vantagens .itens-container .img-itens img:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out 0.5s;
+    border-radius: 5%;
+}
+
+.vantagens .itens-container .txt-itens h3{
+    font-size: 3em;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.itens-container .txt-itens h3 span{
+    font-weight: 300;
+}
+
+/* estilos de botoes de contato */
+section.contato{
+    background-color: white;
+    padding: 80px 0;
+}
+
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3{
+    font-size: 2.5em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.contato .icons-contato a{
+    text-decoration: none;
+}
+
+.contato .icons-contato button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px;
+
+    background-color: transparent;
+    border: 5px solid black;
+    cursor: pointer;
+
+    transition: .5s;
+}
+
+.contato .icons-contato button i{
+    font-size: 25px;
+}
+
+.contato .icons-contato button:hover{
+    background-color: black;
+}
+
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: white;
+}
+
+/* estilo da seção carros */
+
+section.carro{
+    height: 600px;
+
+    background-image: url(../img/bmwwwwwwwwwwwww.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.carro > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.626);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.carro > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    z-index: 2;
+    position: relative;
+}
+
+.carro h3{
+    font-size: 3em;
+    line-height: 50px;
+    font-weight: 200;
+}
+
+.carro h3 span{
+    display: block;
+    font-weight: 700;
+}
+
+.carro p{
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+/* como funciona */
+
+section.como-funciona{
+    padding: 80px 0;
+}
+
+.txt-funciona, .instrucoes{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+}
+
+.como-funciona .txt-funciona{
+    position: sticky;
+    top: 50%;
+    padding-bottom: 30px;
+}
+
+.como-funciona .txt-funciona h3{
+    font-size: 4em;
+    line-height: 50px;
+    font-weight: 300;
+}
+
+.como-funciona .txt-funciona h3 span{
+    display: block;
+    font-weight: 600;
+}
+
+.instrucoes .instru-box{
+    display: block;
+    align-items: center;
+    gap: 20px;
+
+    margin-bottom: 40px;
+    border: 7px solid black;
+    padding: 20px;
+}
+
+.instrucoes .instru-box img{
+    max-width: 100px;
+}
+
+.instrucoes .instru-box h4{
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.instrucoes .instru-box h4 span{
+    font-weight: 300;
+}
+
+.instrucoes .instru-box p{
+    font-size: 18px;
+}
+
+/* estilodo rodape */
+
+footer{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .top-footer button{
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+footer .top-footer button:hover{
+    background-color: white;
+    color: black;
+}
+
+footer .middle-footer{
+    margin: 20px 0;
+}
+
+footer .middle-footer a{
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer .bottom-footer{
+    border-top: 2px solid white;
+}
+
+footer .bottom-footer p{
+    color: white;
+    margin-top: 10px;
+}
